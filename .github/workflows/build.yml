@@ -1,4 +1,4 @@
-name: github pages
+name: Build theme assets
 
 on: [push, pull_request]
 
@@ -34,4 +34,3 @@ jobs:
         force_orphan: true
         publish_dir: ./source
         publish_branch: output
-        exclude_assets: '.github,.git'
