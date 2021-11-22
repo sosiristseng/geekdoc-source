@@ -1,2 +1,3 @@
-# geekdoc-source
-Source that sync with Hugo geekdoc repository
+# Hugo geekdoc source repository
+
+Source repo that synchronizes with the [Hugo geekdoc repository](https://github.com/thegeeklab/hugo-geekdoc).
