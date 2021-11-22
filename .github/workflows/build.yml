@@ -31,6 +31,6 @@ jobs:
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        force_orphan: true
+        # force_orphan: true
         publish_dir: ./source
         publish_branch: output
