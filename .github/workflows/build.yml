@@ -24,17 +24,21 @@ jobs:
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: 'latest'
-    - name: Build website
+    - name: Test build website
       working-directory: source
       run: |
         mkdir exampleSite/themes/ && ln -s $(pwd)/ exampleSite/themes/hugo-geekdoc
         hugo -s exampleSite/ -b http://localhost/
-        rm -rf exampleSite/
+    - name: Copy built files
+      working-directory: source
+      run: |
+        mkdir dist/
+        tar -cf - -X .tarignore . | (cd dist/ && tar xvf -)
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.8.0
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         # force_orphan: true
-        publish_dir: ./source
+        publish_dir: ./source/dist
         publish_branch: output
