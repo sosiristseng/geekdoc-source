@@ -1,44 +1,21 @@
-name: Build theme assets
+name: Download and pugh updates
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * 1"  # Every Monday
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: true  # Fetch Hugo themes (true OR recursive)
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '16'
-        cache: 'npm'
-        cache-dependency-path: source/package-lock.json
-    - name: Install Node dependencies
-      working-directory: source
-      run: npm ci
-    - name: Build theme assets
-      working-directory: source
-      run: npx gulp default
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-    - name: Test build website
-      working-directory: source
+    - name: Download and Extract latest release bundle
       run: |
-        mkdir exampleSite/themes/ && ln -s $(pwd)/ exampleSite/themes/hugo-geekdoc
-        hugo -s exampleSite/ -b http://localhost/
-    - name: Copy built files
-      working-directory: source
-      run: |
-        mkdir dist/
-        tar -cf - -X .tarignore . | (cd dist/ && tar xvf -)
+        mkdir -p out
+        curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz | tar -xz -C out/ --strip-components=1
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.8.0
-      if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        # force_orphan: true
-        publish_dir: ./source/dist
+        publish_dir: out
         publish_branch: output
