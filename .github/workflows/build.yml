@@ -1,4 +1,4 @@
-name: Download and pugh updates
+name: Download and push updates
 
 on:
   workflow_dispatch:
