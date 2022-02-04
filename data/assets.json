@@ -1,7 +1,7 @@
 {
   "main.js": {
-    "src": "js/main-90c337bd.bundle.min.js",
-    "integrity": "sha512-DtTVlK5BP8PvaH05tAoqn8DG+7YoYXp9EyOOZGc8WD7y7qfTo7wdoEUGUfSFJdbYxl/n0bDGBGi5iPIF7mGaTA=="
+    "src": "js/main-8b6f2ee8.bundle.min.js",
+    "integrity": "sha512-W+I337K0VclB6quCksK5p5Y4UyBCB7P8feLo2idSFDmvZTFQydl/N7LoLWcl5QgRXjfS7zjDstImWYXPrP7Zlw=="
   },
   "mermaid.js": {
     "src": "js/mermaid-52c42ca6.bundle.min.js",
@@ -156,8 +156,8 @@
     "integrity": "sha512-sCGiDX6KSnVLTN3SxgxU3idna/C4kSpxEg1e0LDd5Va9GKGU9Pwxsxbfztovdoa4dCzUQor7bNkP9AV31ZUhHw=="
   },
   "main.scss": {
-    "src": "main-ce408b75.min.css",
-    "integrity": "sha512-aP+hNLJf9VL85Sk0vyRfX+wvAwXz1euAB+aeUPC8SkgkhZLHahGBz0AE0SM3eN0FqNa3VJhR/tWuwtoEqiFctw=="
+    "src": "main-ddd57f6f.min.css",
+    "integrity": "sha512-LQsECheSgkGfyOjYoc5qd8d3TlQ224tlKGJX607sycDjDzw4ATnkVZ2+pglwJlCg9RYEV8gSQqqc9Tg6ftKZfA=="
   },
   "favicon/android-chrome-512x512.png": {
     "src": "favicon/android-chrome-512x512.png",
@@ -409,7 +409,7 @@
   },
   "fonts/GeekdocIcons.woff": {
     "src": "fonts/GeekdocIcons.woff",
-    "integrity": "sha512-8vHCwnte3mKaQbqSW2c1/a1CilItIHDPOjzwKEqHA4uyx9TGEwFFMotoJCjIxLHhRVYXdoBw7H8phGX0YaXekg=="
+    "integrity": "sha512-pjXWncjkazFQmIOCGD6hQCMP/Dp1e+tC/wYFENQq3z2ReJ+4UjWrcWyGDGUuRvyz+quzf0EBLKX4XFFTKsaOpA=="
   },
   "favicon/firefox_app_60x60.png": {
     "src": "favicon/firefox_app_60x60.png",
@@ -437,7 +437,7 @@
   },
   "fonts/GeekdocIcons.woff2": {
     "src": "fonts/GeekdocIcons.woff2",
-    "integrity": "sha512-FQ+U7FR/g/f6gwLaDE2VLmYXRQ8B1jLBrz4nJvb8+VbPl8aRzkaLYaODA+ALpbxW+Rw3qG18W5TdMrHN+nVE5A=="
+    "integrity": "sha512-i6iXMT4WXPwFHN0rd1jeh85lACo/sLV9rT7H1fKYejoHPgYwRERhQBx3AiSjW4BsLVc4dU06t7k8T0MLM1vn+Q=="
   },
   "fonts/KaTeX_Size3-Regular.woff2": {
     "src": "fonts/KaTeX_Size3-Regular.woff2",
