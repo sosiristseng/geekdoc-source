@@ -2,8 +2,10 @@ name: Download and push updates
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 1 * * *" # Every day
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   build:
