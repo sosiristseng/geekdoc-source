@@ -3,19 +3,37 @@ name: Download and push updates
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * *"  # Every day
+    - cron: "0 1 * * *" # Every day
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src
     steps:
-    - name: Download and Extract latest release bundle
-      run: |
-        mkdir -p out
-        curl -L https://github.com/thegeeklab/hugo-geekdoc/releases/latest/download/hugo-geekdoc.tar.gz | tar -xz -C out/ --strip-components=1
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.8.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: out
-        publish_branch: output
+      - uses: actions/checkout@v2
+        with:
+          submodules: "true"
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+      - run: npm ci
+      - run: npm run build
+      - name: Test build website
+        run: |
+          mkdir -p exampleSite/themes/ && ln -s $(pwd)/ exampleSite/themes/hugo-geekdoc
+          hugo --panicOnWarning -s exampleSite/ -b http://localhost/
+      - name: package
+        run: |
+          mkdir -p ../out
+          tar -cf - -X .tarignore . | tar -xvf - -C ../out
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: out
+          publish_branch: output
