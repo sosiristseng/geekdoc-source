@@ -1,7 +1,7 @@
 {
   "main.js": {
-    "src": "js/main-16c4e2c7.bundle.min.js",
-    "integrity": "sha512-bl5BOPf5WY/7pmXqUsQyvFycRJFfeZGgTzHV9XxKmZMxNxJgaqb7wy+G8iYQplX1UhLN3HS3dKKJiQHVnuxq9Q=="
+    "src": "js/main-88a42144.bundle.min.js",
+    "integrity": "sha512-KT4h5510BUXRwCfYU76VLwJPcBySqtFvJwFqOJrNELegXjjbySwe53WjyJdfoS+ggcQSHX4wxV5V2ml5o3URfQ=="
   },
   "mermaid.js": {
     "src": "js/mermaid-5e7feba1.bundle.min.js",
@@ -144,8 +144,8 @@
     "integrity": "sha512-8XSFf8v/KZW7sETjasY2xo7QOjF4rIAyKVlMg0ln3f6ltia/PgMmT2uyZtpfEmVjxhKzCE5sBprWWQMPgCnB5A=="
   },
   "main.scss": {
-    "src": "main-b94a0bc8.min.css",
-    "integrity": "sha512-kLBU1vOqhD0D6xwm96e51t4Toioay9Bgs8KeF04P4us8tChTPstDYF/wInDaZ66XNvERuzRbPd975A9U4RYEgg=="
+    "src": "main-d7b46c3f.min.css",
+    "integrity": "sha512-q1HYns0r+XAjL0o1V63aDdYoEzNj8dBJJQTEgq5Y/t16D8kj/lRvzezaIB4RdyNH0U4i7EuxXCxsGJehPBqLow=="
   },
   "favicon/apple-touch-startup-image-640x1136.png": {
     "src": "favicon/apple-touch-startup-image-640x1136.png",
@@ -409,7 +409,7 @@
   },
   "fonts/GeekdocIcons.woff": {
     "src": "fonts/GeekdocIcons.woff",
-    "integrity": "sha512-qwezVTyuRzvpiAYuFBZZ3dGczzlHQ8GSl09zPxSx0cm+Ojq/6h2vCTlv7Rdbtkr5j+OM1nbGbwCcsqoxs7gnXw=="
+    "integrity": "sha512-86NGi7ikHR8V2Y7A5/O3AlXZsTsC5OqUvH5MTgFec8QESsOxx9A6wAc3+DVrPHvCU0CNjT6oN9D/sRk52QrJfQ=="
   },
   "favicon/firefox_app_60x60.png": {
     "src": "favicon/firefox_app_60x60.png",
@@ -437,7 +437,7 @@
   },
   "fonts/GeekdocIcons.woff2": {
     "src": "fonts/GeekdocIcons.woff2",
-    "integrity": "sha512-v2ALVOg0A6z2eCTLM5251GJozCerUMRmD2j0ReHB58x21XH4g4fzTbnkFySewZWG+1sW25pNW+ATQqUE2rFM7g=="
+    "integrity": "sha512-pgCLe44NQ60xj9caqvL+blUNxNmnBFvOvk4QgYGFVXvnhybrSuL2t4HR1w5iJOAJ4CP4ALDi5WxS+hGqDJiaeg=="
   },
   "fonts/KaTeX_Size3-Regular.woff2": {
     "src": "fonts/KaTeX_Size3-Regular.woff2",
@@ -467,13 +467,13 @@
     "src": "favicon/android-chrome-36x36.png",
     "integrity": "sha512-uIOaCXbCeY2tIMUPros0wfBdDIh842crzDQ/4NjTeEqzFhwrK3HlTsdFXYNcqg9OOuO+aATZKwIGYbgaA8vQbA=="
   },
+  "mobile.scss": {
+    "src": "mobile-467819cb.min.css",
+    "integrity": "sha512-HebydAISuYOx0io1hzOxsS95WxRV57CfFueceivz/H7bqrTjwBGSnLItaNmjUK0CRfy34X7J5+SYFNG9xIn7Zg=="
+  },
   "favicon/manifest.json": {
     "src": "favicon/manifest.json",
     "integrity": "sha512-UncSB3MQSXZlaaxiclpQvvZDDYew4CITJ7JTlLcb8kZpyB3YgbqdHBIechH3HIQ1uJsYhgQyItxG3VMxOLfzKw=="
-  },
-  "mobile.scss": {
-    "src": "mobile-1d04b92f.min.css",
-    "integrity": "sha512-KvfM8WyFGmpvx5di6Mf6XMOxOF3PWH9H7qmrD/SSt7TT971j2vUyppZabtUcCCXme6MUDBRQApwIwCRTpTBbOQ=="
   },
   "favicon/favicon-16x16.png": {
     "src": "favicon/favicon-16x16.png",
