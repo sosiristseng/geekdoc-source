@@ -27,8 +27,14 @@ jobs:
           hugo-version: "latest"
       - run: npm ci
       - run: npm run build
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      - run: gem install asciidoctor
       - name: Test build website
         run: |
+          alias asciidoctor="asciidoctor --attribute=experimental=true --attribute=icons=font"
           mkdir -p exampleSite/themes/ && ln -s $(pwd)/ exampleSite/themes/hugo-geekdoc
           hugo --panicOnWarning -s exampleSite/ -b http://localhost/
       - name: package
