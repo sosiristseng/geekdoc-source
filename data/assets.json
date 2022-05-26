@@ -401,7 +401,7 @@
   },
   "fonts/GeekdocIcons.woff": {
     "src": "fonts/GeekdocIcons.woff",
-    "integrity": "sha512-2hLG/1Ya3EKe/GvgMCnXmyaYnsTvuv2Y/bmJZrpx99aITBRrzNqX1Wr6plEJF1W2D2KKZRW9jfcdFWXIZDWZAA=="
+    "integrity": "sha512-ACuNdLJ32T7nfUKvFoqBcGT7dZbTb1hbNj+hDdPaB9ff6eBIdg9C2Rkz7NRNn/g5B7nJobaguNBv1+aKRJgOiA=="
   },
   "fonts/KaTeX_Size2-Regular.woff2": {
     "src": "fonts/KaTeX_Size2-Regular.woff2",
@@ -425,7 +425,7 @@
   },
   "fonts/GeekdocIcons.woff2": {
     "src": "fonts/GeekdocIcons.woff2",
-    "integrity": "sha512-5r3k9MSimrAZYjJnUy36P+yxM4FEzupkJYe490bOlV7oobqoLPf0GRCeDJ3PBwtx6iksCOHNFZVGDULwuwyyIQ=="
+    "integrity": "sha512-5TOE6pk7CT3ncnBsZ+KsudaJuQOtAnsED/uAy7bwIiBMkza019FHISxTlmxX4fkSZDOnpxHgOdEzcLi+vV7tqA=="
   },
   "favicon/apple-touch-icon-76x76.png": {
     "src": "favicon/apple-touch-icon-76x76.png",
