@@ -1,4 +1,4 @@
-name: Download and push updates
+name: Build theme
 
 on:
   workflow_dispatch:
